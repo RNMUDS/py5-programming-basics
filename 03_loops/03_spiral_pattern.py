@@ -9,6 +9,10 @@ def setup():
     py5.size(400, 400)
     py5.background(20, 20, 40)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
+    
     # 中心点
     center_x = 200
     center_y = 200

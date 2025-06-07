@@ -11,6 +11,11 @@ animation_speed = 3
 
 def setup():
     py5.size(800, 600)
+    
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
+    
     count_characters()
 
 def count_characters():

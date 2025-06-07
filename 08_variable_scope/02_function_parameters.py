@@ -52,6 +52,10 @@ def draw_shape(shape):
 def setup():
     py5.size(800, 600)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
+    
     # 初期図形をいくつか作成
     global shapes
     shapes.append(create_shape("circle", 150, 150, 60, [255, 100, 100]))

@@ -8,6 +8,10 @@ def setup():
     py5.size(400, 400)
     py5.background(255)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
+    
     # for文で円を描画
     for i in range(5):
         x = 50 + i * 70

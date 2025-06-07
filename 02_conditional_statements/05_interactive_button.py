@@ -11,6 +11,9 @@ button_height = 50
 
 def setup():
     py5.size(400, 400)
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
 
 def draw():
     py5.background(240, 240, 255)

@@ -66,6 +66,10 @@ def demonstrate_variable_shadowing():
 
 def setup():
     py5.size(800, 600)
+    
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 12)
+    py5.text_font(font)
 
 def draw():
     py5.background(245, 245, 250)

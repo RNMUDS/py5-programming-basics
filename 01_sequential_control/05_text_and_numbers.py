@@ -8,6 +8,10 @@ def setup():
     py5.size(400, 400)
     py5.background(240, 240, 255)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
+    
     # 数値変数の定義
     a = 10
     b = 5

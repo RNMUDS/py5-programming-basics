@@ -46,6 +46,10 @@ def setup():
     py5.size(700, 500)
     py5.background(255)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
+    
     # タイトル
     py5.fill(0)
     py5.text_size(20)

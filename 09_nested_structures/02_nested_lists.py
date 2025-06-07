@@ -12,6 +12,11 @@ board_height = 8
 
 def setup():
     py5.size(700, 500)
+    
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
+    
     initialize_board()
 
 def initialize_board():

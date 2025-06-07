@@ -11,6 +11,10 @@ selected_ingredient = None
 def setup():
     py5.size(600, 500)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
+    
     # 基本色の配合レシピ
     global color_recipes
     color_recipes = {

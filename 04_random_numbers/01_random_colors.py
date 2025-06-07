@@ -8,6 +8,10 @@ def setup():
     py5.size(600, 400)
     py5.background(255)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 16)
+    py5.text_font(font)
+    
     # ランダムな位置にランダムな色の円を描画
     for i in range(50):
         # ランダムな位置

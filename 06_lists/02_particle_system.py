@@ -9,6 +9,10 @@ particles = []
 def setup():
     py5.size(600, 400)
     
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
+    
     # 初期パーティクルを作成
     for i in range(20):
         create_particle(py5.random(100, 500), py5.random(100, 300))

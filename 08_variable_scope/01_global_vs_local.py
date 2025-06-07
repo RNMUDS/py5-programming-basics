@@ -40,6 +40,10 @@ def demonstrate_scope():
 
 def setup():
     py5.size(700, 500)
+    
+    # 日本語フォントを設定
+    font = py5.create_font('MS ゴシック', 14)
+    py5.text_font(font)
 
 def draw():
     py5.background(240, 240, 255)
